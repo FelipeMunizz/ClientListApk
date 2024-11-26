@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/background_app">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayout"
@@ -50,8 +51,8 @@
         android:id="@+id/btnAddClient"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="@color/background_btn_login"
-        android:backgroundTint="@color/background_btn_login"
+        android:background="@color/background_btn"
+        android:backgroundTint="@color/background_btn"
         android:onClick="AddClient_click"
         android:text="@string/app_add_client_btn"
         android:textSize="20sp"
@@ -61,11 +62,12 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewClient"
-        android:layout_width="391dp"
-        android:layout_height="723dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/btnAddClient"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+        tools:listitem="@layout/item_client" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

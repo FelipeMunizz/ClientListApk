@@ -15,4 +15,13 @@
     <string name="app_list_client_btn">Lista de Cliente</string>
     <string name="app_delte_client_btn">Deletar Cliente</string>
     <string name="app_nome_cliente">Nome Cliente</string>
+    <string name="app_activity_add">Cadastrar Cliente</string>
+    <string name="placeholder_name_client">Nome</string>
+    <string name="placeholder_cpf_client">CPF</string>
+    <string name="placeholder_phone_client">Número de celular</string>
+    <string name="placeholder_email_client">Email</string>
+    <string name="placeholder_birth_date_client">Data de Nascimento</string>
+    <string name="placeholder_address_client">Endereço</string>
+    <string name="placeholder_cep_client">CEP</string>
+    <string name="placeholder_city_client">Cidade</string>
 </resources>

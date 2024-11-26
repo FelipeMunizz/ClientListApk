@@ -3,6 +3,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="red">#00FF0000</color>
-    <color name="background_login">#9C27B0</color>
-    <color name="background_btn_login">#483D8B</color>
+    <color name="background_app">#666DE2</color>
+    <color name="background_btn">#11007A</color>
+    <color name="color_mid_gradient">#5442D1</color>
 </resources>
