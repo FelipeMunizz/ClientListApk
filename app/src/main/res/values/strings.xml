@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Client List</string>
+    <string name="app_Email">Email</string>
+    <string name="placeholder_Email">Digite seu Email</string>
+    <string name="app_password">Senha</string>
+    <string name="placeholder_Senha">Digite sua Senha</string>
+    <string name="app_login">Login</string>
+    <string name="app_register_btn">Cadastre-se</string>
+    <string name="app_UserName">Nome</string>
+    <string name="placeholder_name">Digite seu nome</string>
+    <string name="app_confirmed_password">Confirmar Senha</string>
+    <string name="app_exit">Sair</string>
+    <string name="app_add_client_btn">Adicionar Cliente</string>
+    <string name="app_edit_client_btn">Editar Cliente</string>
+    <string name="app_list_client_btn">Lista de Cliente</string>
+    <string name="app_delte_client_btn">Deletar Cliente</string>
+    <string name="app_nome_cliente">Nome Cliente</string>
+</resources>
