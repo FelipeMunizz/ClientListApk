@@ -41,10 +41,6 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
         tokenService = new TokenService(this);
-        String token = tokenService.getToken();
-
-        if(token != null && !token.isEmpty())
-            RedirectClientList();
     }
 
     public void Login(View view){
