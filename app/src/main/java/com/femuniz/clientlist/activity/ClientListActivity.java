@@ -53,6 +53,7 @@ public class ClientListActivity extends BaseActivity {
             @Override
             public void onResponse(Call<List<Client>> call, Response<List<Client>> response) {
                 List<Client> clients = response.body();
+
                 recyclerView = findViewById(R.id.recyclerViewClient);
                 recyclerView.setLayoutManager(new LinearLayoutManager(ClientListActivity.this));
 
