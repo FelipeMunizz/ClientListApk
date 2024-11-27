@@ -12,8 +12,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
 import java.io.IOException;
 
 public class RetrofitClient {
-    private static final String BaseUrlUser = "http://10.0.2.2:5057/api/User/";
-    private static final String BaseUrlClient = "http://10.0.2.2:5057/api/Client/";
+    private static final String BaseUrlUser = "http://10.0.2.2:5000/api/User/";
+    private static final String BaseUrlClient = "http://10.0.2.2:5000/api/Client/";
 
     private static OkHttpClient createOkHttpClient(String token) {
         return new OkHttpClient.Builder()
