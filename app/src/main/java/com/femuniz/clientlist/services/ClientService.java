@@ -27,5 +27,5 @@ public interface ClientService {
     Call<WebResponse<Client>> UpdateClient(@Body Client client);
 
     @DELETE("DeleteClient")
-    Call<Client> DeleteClient(@Query("idClient") int idClient);
+    Call<WebResponse<Boolean>> DeleteClient(@Query("idClient") int idClient);
 }

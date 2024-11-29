@@ -60,12 +60,29 @@ public class ClientListActivity extends BaseActivity {
                 adapter = new ClientListAdapter(clients, new ClientListAdapter.OnClienteClickListener() {
                     @Override
                     public void onEditClick(Client client) {
-
+                        Intent intent = new Intent(getApplicationContext(), AddClientActivity.class);
+                        intent.putExtra("client", client);
+                        startActivity(intent);
                     }
 
                     @Override
                     public void onDeleteClick(Client client) {
+                        ClientService clientService = RetrofitClient.GetClientClient(tokenService.getToken()).create(ClientService.class);
+                        Call<WebResponse<Boolean>> call = clientService.DeleteClient(client.idClient);
 
+                        call.enqueue(new Callback<WebResponse<Boolean>>() {
+                            @Override
+                            public void onResponse(Call<WebResponse<Boolean>> call, Response<WebResponse<Boolean>> response) {
+                                WebResponse<Boolean> result = response.body();
+
+                                GetAllClient();
+                            }
+
+                            @Override
+                            public void onFailure(Call<WebResponse<Boolean>> call, Throwable throwable) {
+
+                            }
+                        });
                     }
                 });
                 recyclerView.setAdapter(adapter);
